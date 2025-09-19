@@ -17,3 +17,6 @@ SoftUni Back-End Course Exercise
 - [x] Add Home Controller
 - [x] Add Movie Controller
 - [x] Combine Controllers Into One File
+- [x] Add unique id generation
+- [] Add Functionality to Create Page
+-
