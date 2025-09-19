@@ -6,3 +6,6 @@ SoftUni Back-End Course Exercise
 - [x] Initialize Project
     - [x] Setup Dev Environment
     - [x] Add Express Server
+- [x] Add Resources
+- [] Setup Handlebars
+- [] Render Home Page
