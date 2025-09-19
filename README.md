@@ -7,5 +7,5 @@ SoftUni Back-End Course Exercise
     - [x] Setup Dev Environment
     - [x] Add Express Server
 - [x] Add Resources
-- [] Setup Handlebars
-- [] Render Home Page
+- [x] Setup Handlebars
+- [x] Render Home Page
