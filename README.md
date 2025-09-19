@@ -20,4 +20,5 @@ SoftUni Back-End Course Exercise
 - [x] Add unique id generation
 - [x] Render Movies on Home Page
 - [x] Add Functionality to Create Page
-- [] Redirect Create Page to Home
+- [x] Redirect Create Page to Home
+- [x] Add 404 Page

@@ -58,10 +58,24 @@ class Movie {
         return movies.slice();
     }
 
+    static findOne(filter = {}) {
+        let result = movies[0];
+
+        if (filter._id) {
+            result = movies.find(movie => filter._id === movie._id)
+        }
+
+        return result;
+    }
+
     saveMovie() {
         movies.push(this);
 
         return this;
+    }
+
+    get id() {
+        return this._id;
     }
 }
 
