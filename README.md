@@ -9,3 +9,6 @@ SoftUni Back-End Course Exercise
 - [x] Add Resources
 - [x] Setup Handlebars
 - [x] Render Home Page
+- [x] Setup Static Files
+- [x] Add a layout
+- [ ] Render About Page

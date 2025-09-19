@@ -9,8 +9,10 @@ app.engine('hbs', handlebars.engine({
 app.set('view engine', 'hbs');
 app.set('views', 'src/views');
 
+app.use(express.static('src/public'))
+
 app.get('/', (req, res) => {
-    res.render('home', {layout: false});
+    res.render('home');
 })
 
 app.listen(2406, () => {console.log('Server is listening on port http://localhost:2406....')})
