@@ -12,6 +12,7 @@ movieController.post('/create', (req, res) => {
 
     movieService.create(movieData);
 
+    res.end()
 })
 
 movieController.get('/search', (req, res) => {
