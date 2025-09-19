@@ -11,4 +11,4 @@ SoftUni Back-End Course Exercise
 - [x] Render Home Page
 - [x] Setup Static Files
 - [x] Add a layout
-- [ ] Render About Page
+- [x] Render About Page
