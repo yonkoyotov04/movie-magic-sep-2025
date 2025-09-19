@@ -22,3 +22,5 @@ SoftUni Back-End Course Exercise
 - [x] Add Functionality to Create Page
 - [x] Redirect Create Page to Home
 - [x] Add 404 Page
+---
+- [x] Add Functional Details
