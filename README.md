@@ -25,10 +25,11 @@ SoftUni Back-End Course Exercise
 ---
 - [x] Add Functional Details
 - [x] Add Partials
-- [] Add File Persistance
 - [x] Add Search Function
     - [x] By Year
     - [x] By Genre
     - [x] By Title
     - [x] Remember Words
 - [x] Dynamic Page Titles
+- [x] Add Functional Rating
+- [] Add File Persistance

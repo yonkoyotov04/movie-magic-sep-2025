@@ -18,8 +18,16 @@ movieController.post('/create', (req, res) => {
 movieController.get('/:movieId/details', (req, res) => {
     const movieId = req.params.movieId;
     const movie = movieService.getOne(movieId);
+    
+    if (movie.rating > 10) {
+        movie.rating = 10;
+    } else if (movie.rating < 0) {
+        movie.rating = 0;
+    }
 
-    res.render('details', { movie, pageTitle: "Movie Details" })
+    const ratingView = "&#x2605".repeat(Math.trunc(movie.rating));
+
+    res.render('details', { movie, pageTitle: "Movie Details", ratingView })
 })
 
 movieController.get('/search', (req, res) => {
