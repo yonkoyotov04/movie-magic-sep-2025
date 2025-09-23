@@ -31,3 +31,4 @@ SoftUni Back-End Course Exercise
     - [x] By Genre
     - [x] By Title
     - [x] Remember Words
+- [x] Dynamic Page Titles
