@@ -26,7 +26,7 @@ SoftUni Back-End Course Exercise
 - [x] Add Functional Details
 - [x] Add Partials
 - [] Add File Persistance
-- [] Add Search Function
-    - [] By Year
-    - [] By Genre
-    - [] By Title
+- [x] Add Search Function
+    - [x] By Year
+    - [x] By Genre
+    - [x] By Title
