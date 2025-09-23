@@ -30,3 +30,4 @@ SoftUni Back-End Course Exercise
     - [x] By Year
     - [x] By Genre
     - [x] By Title
+    - [x] Remember Words
