@@ -10,6 +10,8 @@ export default {
     },
 
     create(movieData) {
+        movieData.rating = Number(movieData.rating);
+        
         const movie = new Movie(movieData);
         return movie.saveMovie()
     }
