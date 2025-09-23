@@ -24,3 +24,6 @@ SoftUni Back-End Course Exercise
 - [x] Add 404 Page
 ---
 - [x] Add Functional Details
+- [x] Add Partials
+- [] Add File Persistance
+- [] Add Search Function
