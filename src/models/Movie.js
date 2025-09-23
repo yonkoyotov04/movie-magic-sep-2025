@@ -62,7 +62,7 @@ class Movie {
         }
 
         if (filter.genre) {
-
+          result = result.filter(movie => movie.genre.toLowerCase() === filter.genre.toLowerCase());
         }
 
         if (filter.year) {
