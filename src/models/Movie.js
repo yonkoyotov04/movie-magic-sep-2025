@@ -54,8 +54,22 @@ class Movie {
         this._id = uuid();
     }
 
-    static all() {
-        return movies.slice();
+    static all(filter = {}) {
+        let result = movies.slice();
+
+        if (filter.title) {
+
+        }
+
+        if (filter.genre) {
+
+        }
+
+        if (filter.year) {
+          result = result.filter(movie => movie.year === filter.year);
+        }
+
+        return result;
     }
 
     static findOne(filter = {}) {
