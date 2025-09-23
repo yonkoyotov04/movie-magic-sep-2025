@@ -32,4 +32,4 @@ SoftUni Back-End Course Exercise
     - [x] Remember Words
 - [x] Dynamic Page Titles
 - [x] Add Functional Rating
-- [] Add File Persistance
+- [x] Add File Persistance
