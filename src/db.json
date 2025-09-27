@@ -131,6 +131,17 @@
       "rating": 9,
       "description": "",
       "_id": "6dd5a543-55d2-4ec8-ace6-c676d517ca24"
+    },
+    {
+      "title": "Гунди - Легенда за любовта",
+      "category": "movie",
+      "genre": "Romance",
+      "director": "Димитър Димитров",
+      "year": "2024",
+      "imageUrl": "https://softwareforcinema.com/f/movies/m/3/8af9530ec12b8ac7d0839107de53d014.jpeg",
+      "rating": 9,
+      "description": "",
+      "_id": "ba060d2d-0322-4e07-97cc-ce0b690c6ac9"
     }
   ]
 }
