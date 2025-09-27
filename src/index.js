@@ -1,8 +1,21 @@
 import express from "express"
 import handlebars from 'express-handlebars'
+import mongoose from "mongoose";
+
 import router from "./routes.js";
 
 const app = express();
+
+const url = 'mongodb://localhost:27017'
+try {
+    await mongoose.connect(url, {
+    dbName: 'movie-magic'
+    })
+    console.log('Connected to database successfully');
+} catch (error) {
+    console.error('Cannot connect to database, ', error.message);
+}
+
 
 app.engine('hbs', handlebars.engine({
     extname: 'hbs'

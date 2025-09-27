@@ -33,3 +33,7 @@ SoftUni Back-End Course Exercise
 - [x] Dynamic Page Titles
 - [x] Add Functional Rating
 - [x] Add File Persistance
+
+## Part 2
+- [x] Install Mongoose
+- [] Connect to DB
