@@ -6,7 +6,7 @@ export default {
     },
 
     getOne(movieId) {
-        return Movie.findOne({_id: movieId})
+        return Movie.findById(movieId);
     },
 
     create(movieData) {

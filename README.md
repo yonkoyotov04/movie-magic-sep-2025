@@ -40,3 +40,4 @@ SoftUni Back-End Course Exercise
 - [x] Change Movie Data Layer
 - [x] Fix Own Property Problem
 - [x] Fix Create Movie Functionality
+- [x] Changed FindByID
