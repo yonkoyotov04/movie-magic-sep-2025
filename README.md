@@ -36,4 +36,5 @@ SoftUni Back-End Course Exercise
 
 ## Part 2
 - [x] Install Mongoose
-- [] Connect to DB
+- [x] Connect to DB
+- [x] Change Movie Data Layer
