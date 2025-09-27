@@ -41,3 +41,8 @@ SoftUni Back-End Course Exercise
 - [x] Fix Own Property Problem
 - [x] Fix Create Movie Functionality
 - [x] Changed FindByID
+---
+- [x] Add New Resources
+- [] Add Cast Model
+- [] Add Cast Service
+- [] Add Cast Controller
