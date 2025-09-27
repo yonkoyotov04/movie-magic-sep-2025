@@ -52,3 +52,4 @@ SoftUni Back-End Course Exercise
 - [x] Add cast attach page
 - [x] Add cast attach functionality
 - [x] Add releation
+- [x] Show cast in details

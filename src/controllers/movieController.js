@@ -19,6 +19,9 @@ movieController.post('/create', async(req, res) => {
 movieController.get('/:movieId/details', async(req, res) => {
     const movieId = req.params.movieId;
     const movie = await movieService.getOne(movieId);
+    const casts = movie.casts;
+
+    console.log(casts);
 
     if (movie.rating > 10) {
         movie.rating = 10;
@@ -28,7 +31,7 @@ movieController.get('/:movieId/details', async(req, res) => {
 
     const ratingView = "&#x2605".repeat(Math.trunc(movie.rating));
 
-    res.render('details', { movie, pageTitle: "Movie Details", ratingView })
+    res.render('details', { movie, pageTitle: "Movie Details", ratingView, casts })
 })
 
 movieController.get('/search', async(req, res) => {
