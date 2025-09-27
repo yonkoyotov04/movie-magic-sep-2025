@@ -38,3 +38,4 @@ SoftUni Back-End Course Exercise
 - [x] Install Mongoose
 - [x] Connect to DB
 - [x] Change Movie Data Layer
+- [] Fix Own Property Problem
