@@ -48,7 +48,7 @@ SoftUni Back-End Course Exercise
 - [x] Add Cast Controller
 - [x] Create Cast Functionality
 ---
-- [] Add cast attach button
-- [] Add cast attach page
-- [] Add cast attach functionality
-- [] Add releation
+- [x] Add cast attach button
+- [x] Add cast attach page
+- [x] Add cast attach functionality
+- [x] Add releation

@@ -21,12 +21,16 @@ export default {
     },
 
     getOne(movieId) {
-        return Movie.findById(movieId);
+        return Movie.findById(movieId).populate('casts');
     },
 
     create(movieData) {
         movieData.rating = Number(movieData.rating);
         
         return Movie.create(movieData);
+    },
+
+    attach(movieId, castId) {
+        return Movie.findByIdAndUpdate(movieId, { $push: { casts: castId } })
     }
 }
