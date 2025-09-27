@@ -43,6 +43,7 @@ SoftUni Back-End Course Exercise
 - [x] Changed FindByID
 ---
 - [x] Add New Resources
-- [] Add Cast Model
-- [] Add Cast Service
-- [] Add Cast Controller
+- [x] Add Cast Model
+- [x] Add Cast Service
+- [x] Add Cast Controller
+- [x] Create Cast Functionality
