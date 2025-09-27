@@ -53,3 +53,5 @@ SoftUni Back-End Course Exercise
 - [x] Add cast attach functionality
 - [x] Add releation
 - [x] Show cast in details
+- [x] Don't show actor if they're already attached
+- [x] Remove unneeded files

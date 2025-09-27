@@ -5,22 +5,25 @@ export default {
         let query = Movie.find();
 
         if (filter.title) {
-          query = query.find({title: { $regex: filter.title, $options: 'i'}});
+          query = query.find({title: { $regex: filter.title, $options: 'i'} });
         }
 
         if (filter.genre) {
-          query = query.find({genre: {$regex: new RegExp(`^${filter.genre}$`), $options: 'i' }})
+          query = query.find({genre: { $regex: new RegExp(`^${filter.genre}$`), $options: 'i' } })
         }
 
         if (filter.year) {
-          query = query.find({year: filter.year});
-
+          query = query.where('year').equals(filter.year);
         }
 
         return query;
     },
 
     getOne(movieId) {
+        return Movie.findById(movieId);
+    },
+
+    getOneDetailed(movieId) {
         return Movie.findById(movieId).populate('casts');
     },
 
