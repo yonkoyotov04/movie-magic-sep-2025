@@ -5,7 +5,7 @@ import castService from "../services/castService.js";
 const movieController = Router();
 
 movieController.get('/create', (req, res) => {
-    res.render('create', {pageTitle: "Create Movie"});
+    res.render('movies/create', {pageTitle: "Create Movie"});
 });
 
 movieController.post('/create', async(req, res) => {
@@ -28,7 +28,7 @@ movieController.get('/:movieId/details', async(req, res) => {
 
     const ratingView = "&#x2605".repeat(Math.trunc(movie.rating));
 
-    res.render('details', { movie, pageTitle: "Movie Details", ratingView })
+    res.render('movies/details', { movie, pageTitle: "Movie Details", ratingView })
 })
 
 movieController.get('/search', async(req, res) => {

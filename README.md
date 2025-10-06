@@ -55,3 +55,7 @@ SoftUni Back-End Course Exercise
 - [x] Show cast in details
 - [x] Don't show actor if they're already attached
 - [x] Remove unneeded files
+---
+- [x] Install new libraries
+- [x] Add new resources
+- [x] Seperate resources into a new folders
