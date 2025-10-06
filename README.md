@@ -69,3 +69,4 @@ SoftUni Back-End Course Exercise
 - [x] Add logout functionality
 ---
 - [x] Add authorization middleware
+- [x] Add route guard
