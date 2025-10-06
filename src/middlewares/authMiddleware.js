@@ -14,6 +14,9 @@ export default function authMiddleware (req, res, next) {
         req.user = decodedToken;
         req.isAuthenticated = true;
         
+        res.locals.isAuthenticated = true;
+        res.locals.user = decodedToken;
+        
         next();
     } catch (error) {
         res.clearCookie('auth')
@@ -27,4 +30,12 @@ export function isAuth (req, res, next) {
     }
 
     next()
+}
+
+export function isGuest (req, res, next) {
+    if (req.isAuthenticated) {
+        return res.redirect('/');
+    }
+
+    next();
 }

@@ -70,3 +70,4 @@ SoftUni Back-End Course Exercise
 ---
 - [x] Add authorization middleware
 - [x] Add route guard
+- [x] Hide certain buttons when not logged in

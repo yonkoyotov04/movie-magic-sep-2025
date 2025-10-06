@@ -9,7 +9,7 @@ movieController.get('/create', isAuth, (req, res) => {
     res.render('movies/create', {pageTitle: "Create Movie"});
 });
 
-movieController.post('/create', async(req, res) => {
+movieController.post('/create', isAuth, async(req, res) => {
     const movieData = req.body;
 
     await movieService.create(movieData);
@@ -47,7 +47,7 @@ movieController.get('/:movieId/attach', isAuth, async(req, res) => {
     res.render('casts/attach', {movie, casts})
 })
 
-movieController.post('/:movieId/attach', async(req, res) => {
+movieController.post('/:movieId/attach', isAuth, async(req, res) => {
     const movieId = req.params.movieId;
     const castId = req.body.cast;
 
