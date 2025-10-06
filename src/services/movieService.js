@@ -27,10 +27,12 @@ export default {
         return Movie.findById(movieId).populate('casts');
     },
 
-    create(movieData) {
-        movieData.rating = Number(movieData.rating);
-        
-        return Movie.create(movieData);
+    create(movieData, creatorId) {
+        return Movie.create({
+          ...movieData,
+          rating: Number(movieData.rating),
+          ownerId: creatorId
+        });
     },
 
     attach(movieId, castId) {
