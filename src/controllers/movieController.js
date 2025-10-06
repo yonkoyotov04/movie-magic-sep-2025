@@ -30,7 +30,9 @@ movieController.get('/:movieId/details', async(req, res) => {
 
     const ratingView = "&#x2605".repeat(Math.trunc(movie.rating));
 
-    res.render('movies/details', { movie, pageTitle: "Movie Details", ratingView })
+    const isCreator = movie.ownerId && movie.ownerId.equals(req.user?.id);
+
+    res.render('movies/details', { movie, pageTitle: "Movie Details", ratingView, isCreator })
 })
 
 movieController.get('/search', async(req, res) => {

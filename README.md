@@ -73,4 +73,4 @@ SoftUni Back-End Course Exercise
 - [x] Hide certain buttons when not logged in
 ---
 - [x] Add delete and edit buttons
-- [] Hide buttons if not owner
+- [x] Hide buttons if not owner
