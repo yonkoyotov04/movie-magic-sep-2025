@@ -59,3 +59,5 @@ SoftUni Back-End Course Exercise
 - [x] Install new libraries
 - [x] Add new resources
 - [x] Seperate resources into a new folders
+---
+- [] Render register and login page
