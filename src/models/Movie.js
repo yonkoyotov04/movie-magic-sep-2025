@@ -3,7 +3,7 @@ import { Schema, model, Types } from "mongoose";
 const movieSchema = new Schema({
     title: {
         type: String,
-        reqired: [true, "A movie title is required"]
+        required: [true, "A movie title is required"]
     },
     category: {
         type: String,

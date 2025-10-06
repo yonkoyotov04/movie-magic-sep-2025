@@ -60,4 +60,5 @@ SoftUni Back-End Course Exercise
 - [x] Add new resources
 - [x] Seperate resources into a new folders
 ---
-- [] Render register and login page
+- [x] Render register and login page
+- [x] Create user model
