@@ -2,6 +2,7 @@ import { Router } from "express";
 import movieService from "../services/movieService.js";
 import castService from "../services/castService.js";
 import { isAuth } from "../middlewares/authMiddleware.js";
+import { validate } from "uuid";
 
 const movieController = Router();
 
@@ -61,7 +62,7 @@ movieController.post('/:movieId/attach', isAuth, async(req, res) => {
 
 movieController.get('/:movieId/delete', isAuth, async(req, res) => {
     const movieId = req.params.movieId;
-    const movie = movieService.getOne(movieId);
+    const movie = await movieService.getOne(movieId);
 
     if (!movie.ownerId?.equals(req.user.id)) {
         return res.redirect('/');
@@ -75,7 +76,35 @@ movieController.get('/:movieId/edit', isAuth, async(req, res) => {
     const movieId = req.params.movieId;
     const movie = await movieService.getOne(movieId);
 
-    res.render('movies/edit', { movie, pageTitle: "Edit" })
+    const categoryViewData = getCategoryViewData(movie.category);
+
+    if (!movie.ownerId?.equals(req.user.id)) {
+        return res.redirect('/');
+    }
+
+    res.render('movies/edit', { movie, categoryViewData, pageTitle: "Edit" })
 })
+
+movieController.post('/:movieId/edit', isAuth, async(req, res) => {
+    const movieId = req.params.movieId;
+    const movieData = req.body;
+
+    await movieService.edit(movieId, movieData);
+
+    res.redirect(`/movies/${movieId}/details`);
+})
+
+function getCategoryViewData (movieCategory) {
+    const categories = [
+        {value: "tv-show", label: "TV Show"},
+        {value: 'animation', label: "Animation"},
+        {value: 'movie', label: "Movie"},
+        {value: 'documentary', label: "Documentary"},
+        {value: 'short-film', label: "Short Film"}
+    ]
+
+    const viewData = categories.map(category => ({...category, selected: movieCategory === category.value ? 'selected' : ""}))
+    return viewData;
+}
 
 export default movieController;

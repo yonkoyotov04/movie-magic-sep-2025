@@ -76,4 +76,4 @@ SoftUni Back-End Course Exercise
 - [x] Hide buttons if not owner
 - [x] Add delete functionality
 - [x] Add edit page
-- [] Add edit functionality
+- [x] Add edit functionality
