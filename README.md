@@ -67,3 +67,5 @@ SoftUni Back-End Course Exercise
 - [x] Add password hashing
 - [x] Add login functionality
 - [x] Add logout functionality
+---
+- [x] Add authorization middleware
