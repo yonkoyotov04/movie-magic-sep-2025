@@ -20,9 +20,12 @@
   },
   "homepage": "https://github.com/yonkoyotov04/movie-magic-sep-2025#readme",
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
     "express": "^5.1.0",
     "express-handlebars": "^8.0.3",
     "handlebars": "^4.7.8",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.18.2",
     "uuid": "^13.0.0"
   }
