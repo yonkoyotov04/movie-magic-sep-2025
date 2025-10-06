@@ -65,4 +65,5 @@ SoftUni Back-End Course Exercise
 - [x] Create auth service
 - [x] Add functionality to register
 - [x] Add password hashing
-- [] Add login functionality
+- [x] Add login functionality
+- [x] Add logout functionality
