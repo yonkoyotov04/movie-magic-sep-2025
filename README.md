@@ -63,5 +63,5 @@ SoftUni Back-End Course Exercise
 - [x] Render register and login page
 - [x] Create user model
 - [x] Create auth service
-- [] Add functionality to register
-- [] Add functionality to login
+- [x] Add functionality to register
+- [x] Add password hashing
