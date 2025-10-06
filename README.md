@@ -74,3 +74,4 @@ SoftUni Back-End Course Exercise
 ---
 - [x] Add delete and edit buttons
 - [x] Hide buttons if not owner
+- [x] Add delete functionality
