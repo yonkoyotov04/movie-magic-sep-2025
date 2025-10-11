@@ -77,3 +77,5 @@ SoftUni Back-End Course Exercise
 - [x] Add delete functionality
 - [x] Add edit page
 - [x] Add edit functionality
+---
+- [x] Add new resources
