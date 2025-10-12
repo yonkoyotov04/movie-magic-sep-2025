@@ -78,4 +78,8 @@ SoftUni Back-End Course Exercise
 - [x] Add edit page
 - [x] Add edit functionality
 ---
-- [x] Add new resources
+- [x] Add new resources 
+- [x] Add validation for movies
+- [x] Add validation for cast
+- [x] Add validation for users
+- [] Add dynamic error message

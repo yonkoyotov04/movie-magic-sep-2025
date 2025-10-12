@@ -4,7 +4,7 @@ const movieSchema = new Schema({
     title: {
         type: String,
         required: [true, "A movie title is required"],
-        min: [5, "Movie title is too short"],
+        minLength: [5, "Movie title is too short"],
         match: [/^[a-zA-Z0-9 ]+$/, "Movie title is invalid"]
         
     },
@@ -19,13 +19,13 @@ const movieSchema = new Schema({
     genre: {
         type: String,
         required: [true, "A movie genre is required"],
-        min: [5, "Movie genre is too short"],
+        minLength: [5, "Movie genre is too short"],
         match: [/^[a-zA-Z0-9 ]+$/, "Movie genre is invalid"]
     },
     director: {
         type: String,
         required: [true, "A movie director is required"],
-        min: [5, "Director name is too short"],
+        minLength: [5, "Director name is too short"],
         match: [/^[a-zA-Z0-9 ]+$/, "Movei director is invalid"]
     },
     year: {
@@ -49,7 +49,7 @@ const movieSchema = new Schema({
     description: {
         type: String,
         required: [true, "A movie description is required"],
-        min: [20, "The movie description is too short"],
+        minLength: [20, "The movie description is too short"],
         match: [/^[a-zA-Z0-9 ]+$/, "Movie description is invalid"]
     },
     casts: [{
@@ -58,7 +58,8 @@ const movieSchema = new Schema({
     }],
     ownerId: {
         type: Types.ObjectId,
-        ref: "User"
+        ref: "User",
+        required: [true, "The movie should have a creator"]
     }
 })
 
