@@ -10,8 +10,8 @@ const castSchema = new Schema({
     age: {
         type: Number,
         required: [true, "Cast age is required"],
-        min: 0,
-        max: 120
+        min: [0, "Cast is too young"],
+        max: [120, "Cast is too old"]
     },
     born: {
         type: String,

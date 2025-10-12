@@ -50,7 +50,7 @@ const movieSchema = new Schema({
         type: String,
         required: [true, "A movie description is required"],
         minLength: [20, "The movie description is too short"],
-        match: [/^[a-zA-Z0-9 ]+$/, "Movie description is invalid"]
+        match: [/^[a-zA-Z0-9 ]+$/, "Movie description has some invalid characters"]
     },
     casts: [{
         type: Types.ObjectId,

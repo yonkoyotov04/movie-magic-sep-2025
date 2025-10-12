@@ -82,4 +82,4 @@ SoftUni Back-End Course Exercise
 - [x] Add validation for movies
 - [x] Add validation for cast
 - [x] Add validation for users
-- [] Add dynamic error message
+- [x] Add dynamic error message

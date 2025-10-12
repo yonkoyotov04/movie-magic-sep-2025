@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 import router from "./routes.js";
 import cookieParser from "cookie-parser";
 import authMiddleware from "./middlewares/authMiddleware.js";
+import pageHelpers from "./helpers/pageHelpers.js";
 
 const app = express();
 
@@ -24,6 +25,9 @@ app.engine('hbs', handlebars.engine({
     runtimeOptions: {
         allowProtoPropertiesByDefault: true,
         allowProtoMethodsByDefault: true
+    },
+    helpers: {
+        ...pageHelpers
     }
 }))
 
